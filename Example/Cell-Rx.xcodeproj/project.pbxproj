@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3024D2971C8E04F8002A8E9D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024D2961C8E04F8002A8E9D /* ViewModel.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3024D2961C8E04F8002A8E9D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		450F3462C0BE5B4864CEA0CD /* Cell-Rx.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Cell-Rx.podspec"; path = "../Cell-Rx.podspec"; sourceTree = "<group>"; };
 		536A381BA4BF9D9597883F99 /* Pods-Cell-Rx_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cell-Rx_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cell-Rx_Example/Pods-Cell-Rx_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Cell-Rx_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cell-Rx_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				3024D2961C8E04F8002A8E9D /* ViewModel.swift */,
 			);
 			name = "Example for Cell-Rx";
 			path = "Cell-Rx";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3024D2971C8E04F8002A8E9D /* ViewModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

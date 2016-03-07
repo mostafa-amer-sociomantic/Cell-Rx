@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import Cell-Rx
+import Cell_Rx
 
 class Tests: XCTestCase {
     

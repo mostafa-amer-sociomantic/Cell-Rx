@@ -1,0 +1,21 @@
+PODS:
+  - Cell+Rx (1.0):
+    - RxSwift (~> 2.1)
+  - RxCocoa (2.2.0):
+    - RxSwift (~> 2.2)
+  - RxSwift (2.2.0)
+
+DEPENDENCIES:
+  - Cell+Rx (from `../`)
+  - RxCocoa
+
+EXTERNAL SOURCES:
+  Cell+Rx:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Cell+Rx: d963376cacde1fda77a76578ce3eafdc8426b89d
+  RxCocoa: 42efb7a7145a8d1d5878e94ce48a580d29e0c796
+  RxSwift: b8a749f2204c6c7a5c29b306a9c3bc11d5b87c5b
+
+COCOAPODS: 0.39.0

@@ -2,11 +2,12 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'Cell-Rx_Example', :exclusive => true do
-  pod 'Cell-Rx', :path => '../'
+  pod 'Cell+Rx', :path => '../'
+  pod 'RxCocoa'
 end
 
 target 'Cell-Rx_Tests', :exclusive => true do
-  pod 'Cell-Rx', :path => '../'
+  pod 'Cell+Rx', :path => '../'
 
   
 end
