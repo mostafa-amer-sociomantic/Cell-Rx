@@ -1,29 +1,34 @@
-# Cell-Rx
+Cell+Rx
+===========
 
-[![CI Status](http://img.shields.io/travis/Ivan Bruel/Cell-Rx.svg?style=flat)](https://travis-ci.org/Ivan Bruel/Cell-Rx)
-[![Version](https://img.shields.io/cocoapods/v/Cell-Rx.svg?style=flat)](http://cocoapods.org/pods/Cell-Rx)
-[![License](https://img.shields.io/cocoapods/l/Cell-Rx.svg?style=flat)](http://cocoapods.org/pods/Cell-Rx)
-[![Platform](https://img.shields.io/cocoapods/p/Cell-Rx.svg?style=flat)](http://cocoapods.org/pods/Cell-Rx)
+**Cell+Rx** provides a similar API to [NSObject+Rx](https://github.com/RxSwiftCommunity/NSObject-Rx) but for cells who are reused along the way.
 
-## Usage
+I found myself creating `DisposeBag`s that were reset on the `prepareForReuse()` function which was pretty repetitive.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Instead of adding a new property to every cell, use this library to add it for you, to any subclass of `UITableViewCell` or `UICollectionViewCell`.
 
-## Requirements
-
-## Installation
-
-Cell-Rx is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "Cell-Rx"
+```swift
+thing
+  .bindTo(otherThing)
+  .addDisposableTo(rx_reusableDisposeBag)
 ```
 
-## Author
+It'll work just like a property: when the instance is deinit'd, the `DisposeBag` gets disposed. It will also reset whenever the cell is reused by detecting `prepareForReuse()` calls. It's also a read/write property, so you can use your own, too.
 
-Ivan Bruel, ivan.bruel@gmail.com
+Installing
+----------
 
-## License
+####CocoaPods
 
-Cell-Rx is available under the MIT license. See the LICENSE file for more info.
+This works with RxSwift version 2, which is still prerelease, so you've gotta be fancy with your podfile.
+
+```ruby
+pod 'Cell+Rx'
+```
+
+And that'll be 👌
+
+License
+-------
+
+MIT License.
