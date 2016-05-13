@@ -133,6 +133,9 @@
 		8306A8387964DAD16B9ED1BF7BA2CD3E /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF15F0670360DB38AA04869D8DAFD2F /* DistinctUntilChanged.swift */; };
 		83BAD8BB9B09157DD89572A8C7E3BEEA /* Driver+Operators+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353654C4339F4A51B22072ABF8DFB207 /* Driver+Operators+arity.swift */; };
 		83FCF7F357BFBECD188107DB9BC5DDE1 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C05F23EE0DAF38D96AB76CD04467C61 /* Reduce.swift */; };
+		844BC8D71CE6715D00F5C7CB /* DisposeBagReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BC8D61CE6715D00F5C7CB /* DisposeBagReusable.swift */; };
+		844CBF651CE378DE00443AC2 /* UITableViewHeaderFooterView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBF641CE378DE00443AC2 /* UITableViewHeaderFooterView+Rx.swift */; };
+		844CBF671CE37A6300443AC2 /* NSObject+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CBF661CE37A6300443AC2 /* NSObject+Swizzle.swift */; };
 		8522EB56E6BEDEF6360BFD2007C62A1D /* AnonymousObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4B1D4840E0CAE14332DA3E205032E3 /* AnonymousObservable.swift */; };
 		86E05E3760F48FF791697EAB980C2280 /* Observable+Aggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881CF1643078D397517DAAC48E905C7E /* Observable+Aggregate.swift */; };
 		877E45649D96BBFFE07DD96FDDF71463 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602FA9E551D99C7B78583618B7ADA121 /* Repeat.swift */; };
@@ -243,7 +246,7 @@
 		F637885B6DE2454E1E9E707B240A7BC5 /* RxTableViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23552686B27DD41A8FF3F9C735225D80 /* RxTableViewDataSourceProxy.swift */; };
 		F72A9A93AC53D14B7D9187A1F4A588A8 /* HistoricalScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06F9B4E5B1D86693A7ED7DA7F63B74 /* HistoricalScheduler.swift */; };
 		F8AF7ECF75907D0CC7E9E956773A2A88 /* Observable+Multiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6A072ECE9ABA22B697A0209771CC16 /* Observable+Multiple.swift */; };
-		F974AB689B3BCD61EDF98227C05F3820 /* UICollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F353F003A5B0E370A8E3841D1CDA4 /* UICollectionViewCell+Rx.swift */; };
+		F974AB689B3BCD61EDF98227C05F3820 /* UICollectionReusableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145F353F003A5B0E370A8E3841D1CDA4 /* UICollectionReusableView+Rx.swift */; };
 		FA77088E9FD7459D02B070580F993224 /* Never.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20241B9BF17267684A8844B1DD440E1 /* Never.swift */; };
 		FC157C593C4E261463064794D3F23D59 /* UIApplication+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CABE56BF177758564356E2DD5E25306 /* UIApplication+Rx.swift */; };
 /* End PBXBuildFile section */
@@ -323,7 +326,7 @@
 		0F4862BAB7D100F087B7D8E576377FEA /* Pods-Cell-Rx_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Cell-Rx_Example.modulemap"; sourceTree = "<group>"; };
 		1236F3E9D5110E818AE019B658E5875E /* Variable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variable.swift; path = RxSwift/Subjects/Variable.swift; sourceTree = "<group>"; };
 		12AAB16AF33852CCB7CD0677B784DEE3 /* ElementAt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementAt.swift; path = RxSwift/Observables/Implementations/ElementAt.swift; sourceTree = "<group>"; };
-		145F353F003A5B0E370A8E3841D1CDA4 /* UICollectionViewCell+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
+		145F353F003A5B0E370A8E3841D1CDA4 /* UICollectionReusableView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+Rx.swift"; sourceTree = "<group>"; };
 		14A392023009FE7CC86458625D7251FC /* ConcurrentMainScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentMainScheduler.swift; path = RxSwift/Schedulers/ConcurrentMainScheduler.swift; sourceTree = "<group>"; };
 		14CCDB24111EC6CF70B3CCA3A41068E7 /* UILabel+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Rx.swift"; path = "RxCocoa/iOS/UILabel+Rx.swift"; sourceTree = "<group>"; };
 		15439F4BF62A3AA3D57FE578097D6F82 /* UIBarButtonItem+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Rx.swift"; path = "RxCocoa/iOS/UIBarButtonItem+Rx.swift"; sourceTree = "<group>"; };
@@ -447,6 +450,9 @@
 		828099D93C799B98309C49A487B445EE /* Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rx.swift; path = RxSwift/Rx.swift; sourceTree = "<group>"; };
 		82946CBFBC0C1C68D14A1D94DE8EEB82 /* ConnectableObservableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectableObservableType.swift; path = RxSwift/ConnectableObservableType.swift; sourceTree = "<group>"; };
 		83E8E7018EDCAC780C9D03CF6BCA1B91 /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = RxSwift/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
+		844BC8D61CE6715D00F5C7CB /* DisposeBagReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposeBagReusable.swift; sourceTree = "<group>"; };
+		844CBF641CE378DE00443AC2 /* UITableViewHeaderFooterView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Rx.swift"; sourceTree = "<group>"; };
+		844CBF661CE37A6300443AC2 /* NSObject+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Swizzle.swift"; sourceTree = "<group>"; };
 		8541C4CD9517E4B3343F9D14E4CBEC5E /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDispatchQueueScheduler.swift; path = RxSwift/Schedulers/SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		8607E86E3A510EED77485EF2D2873E30 /* ControlEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlEvent.swift; path = RxCocoa/Common/CocoaUnits/ControlEvent.swift; sourceTree = "<group>"; };
 		86244484AF4396119C42FD58B2260599 /* UIBindingObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBindingObserver.swift; path = RxCocoa/Common/CocoaUnits/UIBindingObserver.swift; sourceTree = "<group>"; };
@@ -1006,8 +1012,11 @@
 		DFB4544E8EC8391953CC22C68A68FA4A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				145F353F003A5B0E370A8E3841D1CDA4 /* UICollectionViewCell+Rx.swift */,
+				145F353F003A5B0E370A8E3841D1CDA4 /* UICollectionReusableView+Rx.swift */,
 				E2E734D0A15CE54CD08997E8C2A0A368 /* UITableViewCell+Rx.swift */,
+				844CBF641CE378DE00443AC2 /* UITableViewHeaderFooterView+Rx.swift */,
+				844CBF661CE37A6300443AC2 /* NSObject+Swizzle.swift */,
+				844BC8D61CE6715D00F5C7CB /* DisposeBagReusable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1442,8 +1451,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844CBF651CE378DE00443AC2 /* UITableViewHeaderFooterView+Rx.swift in Sources */,
 				F0D79B4CE4ECF44D48477EB93EE72D80 /* Cell+Rx-dummy.m in Sources */,
-				F974AB689B3BCD61EDF98227C05F3820 /* UICollectionViewCell+Rx.swift in Sources */,
+				844CBF671CE37A6300443AC2 /* NSObject+Swizzle.swift in Sources */,
+				844BC8D71CE6715D00F5C7CB /* DisposeBagReusable.swift in Sources */,
+				F974AB689B3BCD61EDF98227C05F3820 /* UICollectionReusableView+Rx.swift in Sources */,
 				5A6C47CFB65E5D8C07E83C86132DA39A /* UITableViewCell+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

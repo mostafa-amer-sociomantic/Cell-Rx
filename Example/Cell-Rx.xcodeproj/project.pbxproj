@@ -13,7 +13,10 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		844BC8D91CE674A200F5C7CB /* UICollectionReusableView+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BC8D81CE674A200F5C7CB /* UICollectionReusableView+RxTests.swift */; };
+		844BC8DB1CE6782F00F5C7CB /* UICollectionViewCell+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BC8DA1CE6782F00F5C7CB /* UICollectionViewCell+RxTests.swift */; };
+		844BC8DD1CE6789700F5C7CB /* UITableViewCell+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BC8DC1CE6789700F5C7CB /* UITableViewCell+RxTests.swift */; };
+		844BC8DF1CE678D600F5C7CB /* UITableViewHeaderFooterView+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BC8DE1CE678D600F5C7CB /* UITableViewHeaderFooterView+RxTests.swift */; };
 		DD4CF8F75FB2B5B25574351B /* Pods_Cell_Rx_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB213874FA854F837EC13E2 /* Pods_Cell_Rx_Example.framework */; };
 		F8A76CDABADCD0C9EE23BF79 /* Pods_Cell_Rx_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE38887D86DEB509D0BE16D /* Pods_Cell_Rx_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -41,8 +44,11 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Cell-Rx_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cell-Rx_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B8536CB818E90FAB4B0F6FD /* Pods-Cell-Rx_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cell-Rx_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cell-Rx_Tests/Pods-Cell-Rx_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		844BC8D81CE674A200F5C7CB /* UICollectionReusableView+RxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+RxTests.swift"; sourceTree = "<group>"; };
+		844BC8DA1CE6782F00F5C7CB /* UICollectionViewCell+RxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+RxTests.swift"; sourceTree = "<group>"; };
+		844BC8DC1CE6789700F5C7CB /* UITableViewCell+RxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+RxTests.swift"; sourceTree = "<group>"; };
+		844BC8DE1CE678D600F5C7CB /* UITableViewHeaderFooterView+RxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+RxTests.swift"; sourceTree = "<group>"; };
 		856576E0549A34A126A5B866 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		908627E5D0BCA4F1644A77F0 /* Pods-Cell-Rx_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cell-Rx_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cell-Rx_Example/Pods-Cell-Rx_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ABB213874FA854F837EC13E2 /* Pods_Cell_Rx_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cell_Rx_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +124,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				844BC8D81CE674A200F5C7CB /* UICollectionReusableView+RxTests.swift */,
+				844BC8DA1CE6782F00F5C7CB /* UICollectionViewCell+RxTests.swift */,
+				844BC8DC1CE6789700F5C7CB /* UITableViewCell+RxTests.swift */,
+				844BC8DE1CE678D600F5C7CB /* UITableViewHeaderFooterView+RxTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -372,7 +381,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				844BC8DD1CE6789700F5C7CB /* UITableViewCell+RxTests.swift in Sources */,
+				844BC8DB1CE6782F00F5C7CB /* UICollectionViewCell+RxTests.swift in Sources */,
+				844BC8D91CE674A200F5C7CB /* UICollectionReusableView+RxTests.swift in Sources */,
+				844BC8DF1CE678D600F5C7CB /* UITableViewHeaderFooterView+RxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
