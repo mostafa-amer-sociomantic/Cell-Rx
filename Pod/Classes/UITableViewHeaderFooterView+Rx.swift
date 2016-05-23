@@ -1,9 +1,16 @@
-import UIKit
-import RxSwift
-import ObjectiveC
+//
+//  UITableViewHeaderFooterView+Rx.swift
+//  Pods
+//
+//  Created by sergdort on 5/11/16.
+//
+//
 
-public extension UITableViewCell {
-    
+import UIKit
+import ObjectiveC
+import RxSwift
+
+extension UITableViewHeaderFooterView {    
     func rx_prepareForReuse() {
         self.rx_prepareForReuse()
         rx_reusableDisposeBag = DisposeBag()
@@ -14,7 +21,7 @@ public extension UITableViewCell {
             static var token: dispatch_once_t = 0
         }
         // make sure this isn't a subclass
-        if self !== UITableViewCell.self {
+        if self !== UITableViewHeaderFooterView.self {
             return
         }
         dispatch_once(&Static.token) {
