@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import ObjectiveC
 
-public extension UITableViewCell {
+public extension UICollectionReusableView {
     
     func rx_prepareForReuse() {
         self.rx_prepareForReuse()
@@ -14,7 +14,7 @@ public extension UITableViewCell {
             static var token: dispatch_once_t = 0
         }
         // make sure this isn't a subclass
-        if self !== UITableViewCell.self {
+        if self !== UICollectionReusableView.self {
             return
         }
         dispatch_once(&Static.token) {
