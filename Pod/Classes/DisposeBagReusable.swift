@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-func lockWith(object: AnyObject, closure: Void -> Void) {
+func lockWith(_ object: AnyObject, closure: (Void) -> Void) {
     objc_sync_enter(object); defer { objc_sync_exit(object) }
     closure()
 }

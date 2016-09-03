@@ -11,17 +11,15 @@ import Foundation
 struct ScheduledItem<T>
     : ScheduledItemType
     , InvocableType {
-    typealias Action = T -> Disposable
+    typealias Action = (T) -> Disposable
     
     private let _action: Action
     private let _state: T
 
     private let _disposable = SingleAssignmentDisposable()
 
-    var disposed: Bool {
-        get {
-            return _disposable.disposed
-        }
+    var isDisposed: Bool {
+        return _disposable.isDisposed
     }
     
     init(action: Action, state: T) {

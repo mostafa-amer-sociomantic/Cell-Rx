@@ -24,24 +24,14 @@ class ViewController: UIViewController {
     for _ in 0..<100 {
       viewModels.value.append(ViewModel())
     }
-    tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
     viewModels
       .asObservable()
-      .bindTo(tableView.rx_itemsWithCellFactory) {
-        (tableView, index, viewModel) -> UITableViewCell in
-        guard let cell = tableView.dequeueReusableCellWithIdentifier("UITableViewCell"),
-        textLabel = cell.textLabel else {
-          return UITableViewCell()
-        }
-        viewModel
-          .string
-          .asObservable()
-          .debug()
-          .bindTo(textLabel.rx_text)
-          .addDisposableTo(cell.rx_reusableDisposeBag)
-        return cell
-      }.addDisposableTo(disposeBag)
-    // Do any additional setup after loading the view, typically from a nib.
+      .debug()
+      .bindTo(tableView.rx.items(cellIdentifier: "UITableViewCell", cellType: UITableViewCell.self)) {
+        (row, element,cell) in
+        cell.textLabel?.text = element.string.value
+    }.addDisposableTo(disposeBag)    
   }
 
   override func didReceiveMemoryWarning() {
