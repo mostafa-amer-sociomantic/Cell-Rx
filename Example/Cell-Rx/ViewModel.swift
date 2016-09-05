@@ -11,7 +11,7 @@ import RxSwift
 
 class ViewModel: NSObject {
 
-  private static let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero. Iste asperiores suscipit, consequatur debitis animi impedit numquam facilis iusto porro labore dolorem, maxime magni incidunt. Delectus, est!".componentsSeparatedByString(" ")
+  fileprivate static let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci, sed libero. Iste asperiores suscipit, consequatur debitis animi impedit numquam facilis iusto porro labore dolorem, maxime magni incidunt. Delectus, est!".components(separatedBy: " ")
 
   let string: Variable<String>
 

@@ -9,17 +9,18 @@ public extension UITableViewCell {
         rx_reusableDisposeBag = DisposeBag()
     }
     
-    public override class func initialize() {
+    open override class func initialize() {
         struct Static {
-            static var token: dispatch_once_t = 0
+            static var token: Int = 0
         }
         // make sure this isn't a subclass
         if self !== UITableViewCell.self {
             return
         }
-        dispatch_once(&Static.token) {
+      
+        DispatchQueue.once(token: &Static.token) {
             self.swizzleMethodForSelector(#selector(self.prepareForReuse),
-                                          withMethodForSelector: #selector(self.rx_prepareForReuse))
+                withMethodForSelector: #selector(self.rx_prepareForReuse))
         }
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 import ObjectiveC
 
 extension NSObject {
-    class func swizzleMethodForSelector(originalSelector: Selector,
+    class func swizzleMethodForSelector(_ originalSelector: Selector,
                                         withMethodForSelector swizzledSelector: Selector) {
         let originalMethod = class_getInstanceMethod(self, originalSelector)
         let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
